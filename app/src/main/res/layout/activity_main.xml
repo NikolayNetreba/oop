@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7FE8A2"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:text="Калькулятор"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Введите а:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_a"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:hint="Введи а"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Введите b:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_b"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:hint="Введи b"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="Введите с:"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_с"
+        android:inputType="number"
+        android:layout_width="250dp"
+        android:hint="Введи с"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Ваш Х равен:"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/edit_view_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_click"
+        android:layout_width="200dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="click"
+        android:text="Нажми на меня!"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:backgroundTint="@color/purple_500"
+        android:onClick="click"
+        android:text="Не нажми на меня!"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
